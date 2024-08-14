@@ -1,0 +1,8 @@
+// src/styles/styles.scss
+@import 'variables';
+
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background-color: #f4f4f4;
+}

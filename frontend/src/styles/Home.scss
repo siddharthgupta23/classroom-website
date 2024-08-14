@@ -1,0 +1,96 @@
+$primary-color: #4CAF50;
+$secondary-color: #FFC107;
+$text-color: #333;
+$background-color: #f4f4f4;
+
+.home-container {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+
+    .header {
+        background-color: $primary-color;
+        color: white;
+        padding: 20px;
+        text-align: center;
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            .nav-item {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .home-content {
+        padding: 20px;
+        background-color: $background-color;
+
+        .classroom-photos {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+
+            img {
+                max-width: 30%;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .subjects {
+            margin-bottom: 30px;
+
+            .subject {
+                margin-bottom: 20px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .contact {
+            text-align: center;
+
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header .navbar {
+        flex-direction: column;
+
+        .nav-item {
+            margin: 10px 0;
+        }
+    }
+
+    .home-content .classroom-photos {
+        flex-direction: column;
+
+        img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
